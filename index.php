@@ -25,25 +25,29 @@ al caricamento della pagina ci saranno tutti i dischi.-->
     <div id="app">
         <div class="container">
 
+            <div class="text-center">
+                <div class="row d-flex align-items-center">
+                 <?php
 
-
-            <div>
-                <?php
-
-                foreach ($database as $data){
-                    echo "<div>";
-                        echo "<h1>" . $data['title'] .  "</h1>" ;  
-                        echo "<h2>" . $data['author'] .  "</h2>" ; 
-                        echo "<td><img src = \".../immagini/" . src:($data['poster'])."\" </td>"; 
-                        echo "<p>" . $data['year'] .  "</p>" ; 
-                        echo "<p>" . $data['genre'] .  "</p>" ;
-                    echo "</div>";
+                    foreach ($database as $data){
+                    
+                        echo "<div class='col'>";
+                            echo "<h4>" . $data['title'] .  "</h4>" ;  
+                            echo "<h5>" . $data['author'] .  "</h5>" ; 
+                            echo "<img style='width: 190px;' src=\"" . $data['poster'] . "\">";
+                            echo "<p>" . $data['year'] .  "</p>" ; 
+                            echo "<p>" . $data['genre'] .  "</p>" ;
+                        echo "</div>";
+                    
                   
-                }
-                
+                    }
                 
                 ?>
+                </div>
+
             </div>
+
+
 
 
 
