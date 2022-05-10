@@ -32,9 +32,9 @@ al caricamento della pagina ci saranno tutti i dischi.-->
                     foreach ($database as $data){
                     
                         echo "<div class='col'>";
+                            echo "<img style='width: 190px;' src=\"" . $data['poster'] . "\">";
                             echo "<h4>" . $data['title'] .  "</h4>" ;  
                             echo "<h5>" . $data['author'] .  "</h5>" ; 
-                            echo "<img style='width: 190px;' src=\"" . $data['poster'] . "\">";
                             echo "<p>" . $data['year'] .  "</p>" ; 
                             echo "<p>" . $data['genre'] .  "</p>" ;
                         echo "</div>";
